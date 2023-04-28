@@ -22,9 +22,20 @@
         border: 2px dashed rgb(255, 94, 0);       }
     </style>
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+        let counter = 0;
+        document.querySelector('button').onclick = ()=>{
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+            document.querySelector('h1').style.color = 'blue';
+        };
+    });
+</script>
 <body>
     <div class="container">
         <h2>Welcome to Khasamoh website</h2>
+        <h1></h1>
         <button>Click Here to Continue</button>
     </div>
 </body>
